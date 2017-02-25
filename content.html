@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RFID Viewer</title>
+        <link href="./style/content.css" type="text/css" rel="stylesheet" />
+        <script src="./node_modules/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1 class="name">{{name}}</h1>
+            <div class="reflection-img">
+                <img :src="image"></img>
+                <div class="reflection"></div>
+            </div>
+            <div class="article" v-html="article"></div>
+            <div class="audio">
+                <p>{{sound}}</p>
+                <audio id="audio" controls>
+                    <source :src="sound"/>
+                </audio>
+            </div>
+        </div>
+        <script src="./js/content.js"></script>
+    </body>
+</html>

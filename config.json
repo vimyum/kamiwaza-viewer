@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "name": "Let's Touch!",
+        "article": "",
+        "image": "./img/touch.svg",
+        "sound": "audio/1.mp3",
+        "tags": [
+            "0"
+        ]
+    },
+    {
+        "id": 1,
+        "name": "名前",
+        "article": "説明（HTMLタグ使えます）",
+        "image": "./img/画像ファイル",
+        "sound": "audio/サウンドファイル",
+        "tags": [
+            "登録モードでUUIDがここに記録されます。"
+        ]
+    }
+]

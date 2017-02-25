@@ -1,0 +1,56 @@
+
+#app .name {
+   text-align: center;
+   margin: 0 auto;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+}
+
+.article {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.audio {
+    visibility: hidden
+}
+
+/*
+ * 画面をキラッと光らせる処理
+ * Reffered below Web-site.
+ * http://www.trust5.jp/jquery-light/
+ */
+.reflection-img{
+    width       :400;
+    height      :465;
+    position    :relative;
+    overflow    :hidden;
+    text-align  :center;
+}
+ 
+.reflection {
+    height      :100%;
+    width       :30px;
+    position    :absolute;
+    top         :-180px;
+    left        :0;
+    background-color: #fff;
+    opacity     :0;
+    transform: rotate(45deg);
+    animation: reflection 2s ease-in-out;
+    -webkit-transform: rotate(45deg);
+    -webkit-animation: reflection 2s ease-in-out;
+}
+ 
+@keyframes reflection {
+    0% { transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { transform: scale(50) rotate(45deg); opacity: 0; }
+}
+@-webkit-keyframes reflection {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}

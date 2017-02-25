@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Index of Contents</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <h1>List</h1>
+    <div id="list">
+        <form>
+        <input v-model="search" type="text" placeholder="filter">
+        </form>
+        <ul>
+            <li v-for="item in filteredItems">
+                <a :href="'./content.html#' + item.tags[0]">{{item.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/list.js"></script>
+</body>
+</html>
